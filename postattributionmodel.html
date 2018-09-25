@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Nik's Blogs</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Nik's World</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="post.html">Sample Post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/post-bg.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>Attribution Modeling</h1>
+              <h2 class="subheading">How much credit to be given to which touchpoint?</h2>
+              <span class="meta">Posted by on September 24, 2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+		  
+            <h3>What is attribution modeling?</h3>
+			<a href="">
+              <img class="img-fluid" src="img/soccer.png" alt="soccer fieldset">
+            </a>
+			<span class="caption text-muted">Soccer field example</span>
+			
+            <p>When a goal happens in soccer, which player should get how much credit of it?
+			<ul>
+				<li>Should striker get the most credit for the goal? </li>
+				<li>Should last person who pass the ball to the striker get the most credit for the goal?</li>
+				<li>Should first person who initiated that rythm of passes get the most credit of the goal?</li>
+				<li>Should every person who passes the ball get equal credit?</li>
+				<li>Should the latter ones get more credit of the goal?</li>
+			</ul>
+			</p>
+			<blockquote class="blockquote">In marketing we are facing the similar kind of problem, that when the conversion happens. Then how much credit should be given to which channel in marketing?</blockquote>
+
+			<a href="">
+              <img class="img-fluid" src="img/marketingfootball.jpg" alt="marketing fieldset">
+            </a>
+			<span class="caption text-muted">A customer's journey for landing on website</span>
+			
+			<br>
+			<hr>
+			<br>
+
+			
+            <h3>Why we need attribution model?</h3>
+			
+            <p>In today's world every company is spending big amount of their budget on  marketing<br>
+			<ul>
+				<li>To gauge the <b>effectiveness</b> of channels </li>
+				<li>To measure <b>impact of communication</b> with customers</li>
+				<li>To determine <b>ROI</b></li>
+				<li>To decide which <b>actions</b> to take</li>
+			</ul>
+			</p>
+			<hr>
+			<br>
+ 
+            <h3>Types of attribution models:</h3> <br>
+			<ul>
+				<li> <b> Rule based attribution model </b> </li>
+				<ul>
+					<li> First Click Attribution Model 
+					<p> This is the closest proxy we have for "how did they hear about us in the first place?" <br> This is useful if you need to know which keywords genuinely helped make you known to the user.
+					</p>
+					<table style="width:100%">
+						<!-- caption>First Click Attribution Model</caption> -->
+						<tr>
+							<th><img class="img-fluid" src="img/firstclick.png" alt="marketing fieldset">
+							</th>
+							<th>
+								Pros:
+								<ul>
+									<li>Easy to implement</li>
+									<li>Helps to know New Customer Acquisition Channels</li>
+									<li>Insight into drive awareness campaigns</li>
+								</ul>
+							
+								Cons:
+								<ul>
+									<li>No influence of subsequent touches</li>
+									<li>Too much credit to lead gen programs</li>
+								</ul>
+							
+							</th>
+						</tr>
+
+					</table>
+					</li>
+
+					<li> Last Click Attribution Model 
+					<p> Most useful when the final touchpoint really was the deciding one, e.g. for impulse purchases or very price-sensitive decisions.
+					</p>
+					<table style="width:100%">
+						<!-- caption>Last Click Attribution Model</caption> -->
+						<tr>
+							<th><img class="img-fluid" src="img/lastclick.png" alt="marketing fieldset">
+							</th>
+							<th>
+								Pros:
+								<ul>
+									<li>Easy to implement</li>
+									<li>Insights into drive conversion campaigns</li>
+								</ul>
+							
+								Cons:
+								<ul>
+									<li>No influence of prior touches</li>
+									<li>Too much credit to converting campaigns</li>
+								</ul>
+							
+							</th>
+						</tr>
+
+					</table>
+					</li>					
+
+					<li> Equal weight Attribution Model 
+					<p> Gives equal weight to every touchpoint. Doesn't matter when that click is happening.
+					</p>
+					<table style="width:100%">
+						<!-- caption>Equal Weight Attribution Model</caption> -->
+						<tr>
+							<th><img class="img-fluid" src="img/equalweight.png" alt="marketing fieldset">
+							</th>
+							<th>
+								Pros:
+								<ul>
+									<li>No-fighting over who gets credit</li>
+									<li>Helpful for longer revenue cycles with many clicks</li>
+								</ul>
+							
+								Cons:
+								<ul>
+									<li>Low-impact touchpoints gets high credit</li>
+									<li>No importance to high impact touchpoints</li>
+								</ul>
+							
+							</th>
+						</tr>
+
+					</table>
+					</li>
+					
+					
+
+					
+					
+					<li> Time Decay Attribution Model 
+					<p> “Latter you are in click-chain, more credit you will get”. If users can't remember about who showed up on the first few clicks, than those were probably worth less in final decision.
+					</p>
+					<table style="width:100%">
+						<!-- caption>Time Decay Attribution Model</caption> -->
+						<tr>
+							<th><img class="img-fluid" src="img/timedecay.png" alt="marketing fieldset">
+							</th>
+							<th>
+								Pros:
+								<ul>
+									<li>Focused on all touchpoints</li>
+									<li>Helpful for longer revenue cycles with many clicks</li>
+								</ul>
+							
+								Cons:
+								<ul>
+									<li>Artificially inflate importance to latter channels</li>
+									<li>Low-credit to acquisition channels</li>
+								</ul>
+							
+							</th>
+						</tr>
+
+					</table>
+					</li>
+					
+					<li> Positional-Rule based Attribution Model 
+					<p> “What make you aware and What make you purchase from us?"<br> If you needed to get on a shortlist but you don't care if the user interacted with you again until they made their final decision, this model replicates that level of credit.
+					</p>
+					<table style="width:100%">
+						<!-- caption>Positional-Rule based Attribution Model</caption> -->
+						<tr>
+							<th><img class="img-fluid" src="img/positional.png" alt="marketing fieldset">
+							</th>
+							<th>
+								Pros:
+								<ul>
+									<li>High credit for acquiring and converting channels</li>
+									<li>Helpful for longer revenue cycles with many clicks</li>
+								</ul>
+							
+								Cons:
+								<ul>
+									<li>Less influence for middle channels</li>
+								</ul>
+							
+							</th>
+						</tr>
+
+					</table>
+					</li>
+					
+				</ul>
+				<hr>
+				<li> <b> Data-driven attribution model </b> </li>
+				<ul>
+					<p> "Proper distribution to each channel"
+					</p>
+					<table style="width:100%">
+						<!-- caption>First Click Attribution Model</caption> -->
+						<tr>
+							<th><img class="img-fluid" src="img/datadriven.png" alt="marketing fieldset">
+							</th>
+							<th>
+								Pros:
+								<ul>
+									<li>Helps to know proper attribution to each channel</li>
+									<li>No set of rules to skew data</li>
+									<li>Less guess work</li>
+									<li>Better decisions</li>
+								</ul>
+							
+								Cons:
+								<ul>
+									<li>Not Easy to implement</li>
+									<li>Require statistical knowledge</li>
+									<li>Require a lot of data to know statistical validity</li>
+								</ul>
+							</th>
+						</tr>
+					</table>
+					
+					<li> Shapely Attribution Model 
+						<img class="img-fluid" src="img/shapelyformula.png" alt="marketing fieldset">
+						<blockquote class="blockquote"> <br>
+						How much value does each channel have?
+						<br>
+                        Or in other words
+						<br>
+						How much value a channel brings to already existing list of channels?
+						</blockquote>
+						
+						<p> lets consider a customer journeys</p>
+						<img class="img-fluid" src="img/shapelypath1.jpg" alt="marketing fieldset">
+						
+						<p> In this customer journey customer has 1% chances of making a purchase. </p>
+						<img class="img-fluid" src="img/shapelypath2.jpg" alt="marketing fieldset">
+
+						<p> Now when we add display to the customer journey customer has 2% chances of making a purchase. Means there are 100% more chances of making a purchase when we have display as a channel.</p>						
+						<img class="img-fluid" src="img/shapelydata1.jpg" alt="marketing fieldset">
+						<img class="img-fluid" src="img/shapelydata2.jpg" alt="marketing fieldset">
+						<img class="img-fluid" src="img/shapelydata3.jpg" alt="marketing fieldset">
+					</li>
+					
+					
+					<li> Markov-chain Attribution Model </li>
+				</ul>
+			</ul>
+			<hr>
+			<br>
+			
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <!-- <p class="copyright text-muted">Copyright &copy; Your Website 2018</p> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>
