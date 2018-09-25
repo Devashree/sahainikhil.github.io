@@ -1,0 +1,9 @@
+# BEGIN SSL
+<IfModule mod_rewrite.c>
+RewriteEngine On 
+RewriteCond %{HTTPS} off
+RewriteRule .* https://www.nikhilsahai.com%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule .* https://www.nikhilsahai.com%{REQUEST_URI} [L,R=301]
+</IfModule>
+# END SSL
