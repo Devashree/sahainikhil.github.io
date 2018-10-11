@@ -363,18 +363,48 @@
 						</blockquote>
 						
 						<p> lets consider 3 customer journeys</p>
+						<br>
+						<p> Journey 1: Customer comes from Social channel, then after a few days customer comes from Display channel, then from Retargeting and finally makes a purchase. </p>
 						<img class="img-fluid" src="img/markovpath1.JPG" alt="marketing fieldset">
+						<br>
+						<p> Journey 2: Customer comes from Display channel, then after a few days customer comes from Retargeting channel but never makes a purchase. </p>
 						<img class="img-fluid" src="img/markovpath2.JPG" alt="marketing fieldset">
+						<br>
+						<p> Journey 3: Customer comes from Display channel only and never makes a purchase. </p>
 						<img class="img-fluid" src="img/markovpath3.JPG" alt="marketing fieldset">
-						
+						<br>
+						<p> So, we have 3 customer journey's as follows: </p>
 						<img class="img-fluid" src="img/markovdata1.jpg" alt="marketing fieldset">
-						
+						<br>
+						<p> Since Markov Model is the state change model. It is based on the current as well as previous stage only. So, we need to transpose the data and make the probability of the customer going from the initial stage to the next stage.
+						</p>
 						<img class="img-fluid" src="img/markovdata2.jpg" alt="marketing fieldset">
-
+						<br>
+						<p>Once we have done the transformation of data, we get this kind of chart for all the channel in the customer journey: </P>
 						<img class="img-fluid" src="img/markovconversion1.JPG" alt="marketing fieldset">
-						<img class="img-fluid" src="img/markovconversion2.JPG" alt="marketing fieldset">
-						<img class="img-fluid" src="img/markovconversion3.JPG" alt="marketing fieldset">
 						
+						<br>
+						<p>Total chances of making a purchase is (33% * 100% * 66% * 50%) + (66% * 66% * 50%) = 33%</p>
+						<img class="img-fluid" src="img/markovconversion2.JPG" alt="marketing fieldset">
+						
+						<br>
+						<p>what will be the impact if we remove social channel from the customers journey is <strike>(33% * 100% * 66% * 50%) + </strike> (66% * 66% * 50%) = 22%</P>
+						<img class="img-fluid" src="img/markovconversion3.JPG" alt="marketing fieldset">
+						<p> Effect of removing social media is 22%/33% = 0.66
+						
+						<br>
+						<p>Similarly, finding the impact of removing other channels.
+						</p>
+						<br>
+						<p>
+						Effect of removing:
+							<ul>
+								<li> Social Media: 22.2% / 33.3% = 0.66
+								<li> Display: 1 
+								<li> Retargeting: 1
+							</ul>
+						</p>
+
 						<img class="img-fluid" src="img/markovconversion4.jpg" alt="marketing fieldset">
 						
 					
